@@ -1,0 +1,106 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(161,0,53);
+    background: linear-gradient(233deg, rgba(161,0,53,1) 0%, rgba(255,134,158,1) 49%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    background: rgba(255, 231, 191, 0.5);
+    padding: 0 1em;
+    font-size: 1em;
+    color: #A10035;
+}
+
+nav{
+    display: flex;
+    overflow: hidden;
+}
+
+.nav-item{
+    background: none;
+    border: none;
+    width: 75px;
+    font-size: 1em;
+    color: #A10035;
+    &:active{
+        font-size: 1.2em;
+    }
+}
+
+main{
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #FFE7BF;
+}
+
+.seeMenu{
+    background: none;
+    height: 40px;
+    width: 130px;
+    font-size: 1rem;
+    border: 2px solid #A10035;
+    border-radius: 15px;
+    color: #A10035;
+    &:active{
+        font-size: 1.1rem;
+    }
+}
+
+.foodMenu{
+    height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+    margin: 1em;
+}
+
+.food-item{
+    background: linear-gradient(180deg, rgba(255,196,196,1) 0%, rgba(255,231,191,1) 100%);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .food-name{
+        font-weight: bold;
+        color: #A10035;
+    }
+
+    .food-dsc{
+        color: #A10035;
+    }
+    button{
+        color: #FFE7BF;
+        height: 40px;
+        width: 100px;
+        background: #A10035;
+        border-radius: 15px;
+        border: 2px solid #FF869E;
+        font-size: .8rem;
+        &:active{
+            font-size: .9rem;
+        }
+    }
+}
